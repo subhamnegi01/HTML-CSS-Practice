@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid black;
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(37, 148, 179, 1) 0%, rgba(111, 225, 247, 1) 34%, rgba(227, 255, 171, 1) 96%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 450px;
+            height: 700px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            padding-bottom: 5px;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        .card img{
+            width: 100%;
+            height: 250px;
+            
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            
+
+        }
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 75%;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        #amountBox{
+            width: 80%;
+            height: 60px;
+            min-width: 400px;
+            background-color: rgb(119, 168, 243);
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+            gap: 90px;
+        }
+
+        #leftBox{
+            /* width: fit-content; */
+            height: 100%;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .imgBox img{
+            width: 3rem;
+            height: 3rem;
+        
+        }
+        .textamuBox p{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .rightBox a{
+        
+            font-size: 25px;
+        }
+
+        #paymentButton{
+            width: 80%;
+            height: 55px;
+            background-color: rgb(30, 30, 139);
+            color: white;
+            font-size: 20px;
+            border-radius: 20px;
+            -webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.85); 
+            box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.85);
+        }
+        .cancelBox a{
+            text-decoration: none;
+            color: rgb(7, 7, 167);
+            font-weight: bold;
+            font-size: 25px;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <img src="iphone.webp" >
+        <div class="textBox">
+            <h2>IPhone.</h2>
+            <p>iPhone offers sleek design powerful performance advanced cameras secure ecosystem smooth software premium build quality long updates and seamless connectivity.
+            </p>
+        </div>
+        
+        <div id="amountBox">
+            <div id="leftBox">
+                <div class="imgBox">
+                    <img src="Apple-Music-Logo-PNG.png" >
+                </div>
+                <div class="textamuBox">
+                    <p>Amount</p>
+                    <p>$9.9/month</p>
+                </div>
+            </div>
+
+            <div class="rightBox">
+                <a href="#">Change</a>
+            </div>
+        </div>
+            
+        <button id="paymentButton">
+            Proceed To Payment
+        </button>
+
+        <div class = "cancelBox">
+            <a href="#">Cancel Order</a>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: rgb(247, 249, 249);
+            border: 1px solid black;
+            height: 1600px;
+            display: flex;
+            padding: 2px;
+            margin: 12px;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            align-items: stretch;
+            align-content: start;
+            flex-grow: 4;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown
+            
+            
+        }
+
+        #box1{
+            background-color: aquamarine;
+            flex-grow: 5;
+        }
+
+        #box2{
+            background-color: beige;
+            flex-grow: 1;
+        }
+        #box3{
+            background-color: blueviolet;
+            flex-grow: 1;
+        }
+        #box4{
+            background-color: rgb(27, 155, 108);
+            order: -1;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box" id="box1">Welcome </div>
+        <div class="box" id="box2"> to </div>
+        <div class="box" id="box3"> the </div>
+        <div class="box" id="box4"> site.</div>
+    </div>
+
+</body>
+</html>
